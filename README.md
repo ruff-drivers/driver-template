@@ -9,9 +9,9 @@ Some description of this device.
 - [{model-a}](https://rap.ruff.io/devices/{model-a})
 - [{model-b}](https://rap.ruff.io/devices/{model-b})
 
-## Setup
+## Installing
 
-Execute following command and enter a **supported model** to setup.
+Execute following command and enter a **supported model** to install.
 
 ```sh
 # Please replace `<device-id>` with a proper ID.
@@ -54,6 +54,25 @@ declare class Device extends RuffDevice {
 	 */
     turnOff(callback: (error: Error) => void): void;
 }
+```
+
+## Contributing
+
+Contributions to this project are warmly welcome. But before you open a pull request, please make sure your changes are passing code linting and tests.
+
+You will need the latest [Ruff SDK](https://ruff.io/) to install rap dependencies or and then run tests.
+
+### Installing NPM and Rap Dependencies
+
+```sh
+npm install
+rap install
+```
+
+### Running Tests
+
+```sh
+npm test
 ```
 
 ## License

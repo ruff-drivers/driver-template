@@ -30,4 +30,8 @@ describe('Driver {driver-name}', function () {
         when(gpio).write(0).then(done);
         device.turnOff();
     });
+
+    it('should pass', function () {
+        assert(true);
+    });
 });

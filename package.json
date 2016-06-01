@@ -1,17 +1,17 @@
 {
-  "name": "{package-name}",
+  "name": "driver-name",
   "version": "0.1.0",
-  "description": "{package-description}",
+  "description": "Driver description.",
   "author": "Nanchao Inc.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruff-drivers/{package-name}.git"
+    "url": "git+https://github.com/ruff-drivers/driver-name.git"
   },
   "bugs": {
-    "url": "https://github.com/ruff-drivers/{package-name}/issues"
+    "url": "https://github.com/ruff-drivers/driver-name/issues"
   },
-  "homepage": "https://github.com/vilic/{package-name}",
+  "homepage": "https://github.com/vilic/driver-name",
   "keywords": [
     "ruff",
     "driver"
@@ -19,13 +19,15 @@
   "main": "src/index.js",
   "device-typings": "typings/device.d.ts",
   "scripts": {
+    "install-runtime": "rvm install --local",
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "./.ruff/bin/ruff ./test/test.js"
+    "test": "ruff ./test/test.js"
   },
   "devDependencies": {
     "eslint": "^2.11.1",
-    "ruff-standard": "^0.1.4"
+    "ruff-standard": "^0.1.4",
+    "rvm": "^0.2.0"
   },
   "ruff": {
     "devDependencies": {

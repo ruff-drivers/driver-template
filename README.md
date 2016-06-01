@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ruff-drivers/driver-template.svg)](https://travis-ci.org/ruff-drivers/driver-template)
+
 # {driver-name} Driver for Ruff
 
 Some description of this device.

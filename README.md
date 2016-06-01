@@ -62,7 +62,7 @@ Contributions to this project are warmly welcome. But before you open a pull req
 
 You will need the latest [Ruff SDK](https://ruff.io/) to install rap dependencies or and then run tests.
 
-### Installing NPM and Rap Dependencies
+### Installing Dependencies
 
 ```sh
 npm install

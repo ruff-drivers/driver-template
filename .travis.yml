@@ -2,4 +2,5 @@ language: node_js
 node_js:
   - "6"
 before_script:
-  - npm run install-runtime
+  - npm run install-sdk
+  - npm run install-dependency

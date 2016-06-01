@@ -19,7 +19,8 @@
   "main": "src/index.js",
   "device-typings": "typings/device.d.ts",
   "scripts": {
-    "install-runtime": "rvm install --local",
+    "install-sdk": "rvm install --local",
+    "install-dependency": "rap install",
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "ruff ./test/test.js"

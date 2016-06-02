@@ -4,6 +4,10 @@
 
 Some description of this device.
 
+## Supported Engines
+
+Ruff: 1.0.0
+
 ## Supported Models
 
 - [{model-a}](https://rap.ruff.io/devices/{model-a})
@@ -58,6 +62,12 @@ Turn the device off.
 #### `someProperty`
 
 If any property.
+
+### Events
+
+#### `someEvent`
+
+If any event.
 
 ## Contributing
 

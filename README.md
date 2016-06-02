@@ -73,7 +73,7 @@ If any event.
 
 Contributions to this project are warmly welcome. But before you open a pull request, please make sure your changes are passing code linting and tests.
 
-You will need the latest [Ruff SDK](https://ruff.io/) to install rap dependencies or and then run tests.
+You will need the latest [Ruff SDK](https://ruff.io/) to install rap dependencies and then to run tests.
 
 ### Installing Dependencies
 

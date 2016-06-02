@@ -6,7 +6,7 @@ Some description of this device.
 
 ## Supported Engines
 
-Ruff: 1.0.0
+* Ruff: 1.1.0
 
 ## Supported Models
 

@@ -42,16 +42,16 @@ Common issues or pitfalls of using this driver. Can be removed if none.
 ```ts
 // Copy the declaration from `device.d.ts`, and remove `export`.
 declare class Device extends RuffDevice {
-	/**
-	 * Turn this device on.
-	 * @param callback - The callback.
-	 */
+    /**
+     * Turn this device on.
+     * @param callback - The callback.
+     */
     turnOn(callback: (error: Error) => void): void;
 
-	/**
-	 * Turn this device off.
-	 * @param callback - The callback.
-	 */
+    /**
+     * Turn this device off.
+     * @param callback - The callback.
+     */
     turnOff(callback: (error: Error) => void): void;
 }
 ```

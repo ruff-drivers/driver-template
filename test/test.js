@@ -1,37 +1,33 @@
 'use strict';
 
-var assert = require('assert');
-var path = require('path');
-var when = require('ruff-mock').when;
+var Level = require('gpio').Level;
+var mock = require('ruff-mock');
 
-var driverPath = path.join(__dirname, '..');
-var runner = require('ruff-driver-runner');
+var mockAny = mock.mockAny;
+var when = mock.when;
+
+var Device = require('../');
 
 require('t');
 
-describe('Driver {driver-name}', function () {
+describe('Template Driver', function () {
     var device;
     var gpio;
 
-    before(function (done) {
-        runner.run(driverPath, function (createdDevice, context) {
-            device = createdDevice;
-            gpio = context.arg('gpio');
-            done();
+    before(function () {
+        gpio = mockAny();
+        device = new Device({
+            gpio: gpio
         });
     });
 
-    it('should turn on', function (done) {
-        when(gpio).write(1).then(done);
-        device.turnOn();
-    });
+    it('should write `Level.high`', function (done) {
+        when(gpio)
+            .write(Level.high, Function)
+            .then(function (level, callback) {
+                setImmediate(callback);
+            });
 
-    it('should turn off', function (done) {
-        when(gpio).write(0).then(done);
-        device.turnOff();
-    });
-
-    it('should pass', function () {
-        assert(true);
+        device.writeHigh(done);
     });
 });

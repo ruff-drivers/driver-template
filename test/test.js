@@ -3,7 +3,6 @@
 var Level = require('gpio').Level;
 var mock = require('ruff-mock');
 
-var mockAny = mock.mockAny;
 var when = mock.when;
 
 var Device = require('../');
@@ -15,7 +14,7 @@ describe('Template Driver', function () {
     var gpio;
 
     before(function () {
-        gpio = mockAny();
+        gpio = mock({}, true);
         device = new Device({
             gpio: gpio
         });
